@@ -1,0 +1,400 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Lane - #OneOfThose</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/fli1jih.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="js/vendor/mediaelement-and-player.min.js"></script>
+    <style>
+		body{
+			background:#FF3;
+			padding:5%;
+		}
+		
+		h1,h2,h3,h4,h5,h6,p,a{
+ 			font-family: "pirulen",sans-serif;
+		  }
+		  
+		  .main-logo{
+			font-size:6em;
+			font-weight:bolder;  
+			margin:0;
+			padding:0;
+		  }
+		  
+		  a{
+			color:#000;  
+		  }
+		  
+		  a:hover{
+			color:#999900;  
+		  }
+		  
+		  .f-dropdown li a {
+				display: block;
+				padding: 0.5rem;
+				color: #ff3;
+			}
+		  
+		.main-content{
+			padding:15% 0;	
+		}
+				
+		#music{
+			min-width:100%;
+			min-height:100%;	
+		}
+		
+		.social-media a{
+			color:#000;
+			font-size:3em;	
+			margin: 4px 3px 0px 0px;
+		}
+		
+		.social-media a:last-child{
+			margin: 4px 0px 0px 0px;
+		}
+		
+		.social-media a:hover{
+			color:#999900;  
+		  }
+		  .audio-player{
+					width:100%;  
+					text-align:center;
+				  }
+				  
+				  .mejs-controls div.mejs-horizontal-volume-slider {
+					  display:none;
+					}
+					.mejs-controls .mejs-mute button, .mejs-controls .mejs-unmute button {
+					 display:none;
+					}
+					ul{
+						list-style:none;
+					}
+					.mejs-time-rail, .mejs-button, .mejs-playpause-button, .mejs-play{
+						display:none;
+					}
+		  
+		  @media screen and (max-width: 1000px) {
+			    .main-logo{
+					font-size:3.5em;  
+					margin:0;
+					padding:0;
+					min-width:100%;
+				  } 
+				  
+				  .audio-player{
+					width:100%;  
+				  }
+				  
+				  .mejs-controls div.mejs-horizontal-volume-slider {
+					  display:none;
+					}
+					.mejs-controls .mejs-mute button, .mejs-controls .mejs-unmute button {
+					 display:none;
+					}
+					ul{
+						list-style:none;
+					}
+					.mejs-time-rail, .mejs-button, .mejs-playpause-button, .mejs-play{
+						display:none;
+					}
+		  }
+		  
+		  @media screen and (max-width: 42em) {
+			  .main-logo{
+					font-size:2em;  
+					margin:0;
+					padding:0;
+				  }
+		.social-media a{
+			color:#000;
+			font-size:2em;	
+			margin: 4px 3px 0px 0px;
+		}
+		  }
+		  
+		  #playlist,audio{background:#000;width:100%;padding:15px;margin:0;}
+			.active a{color:#ff3;text-decoration:none;}
+			li a{color:#eeeedd;background:#000;padding:5px;display:block;}
+			li a:hover{text-decoration:none;}
+	</style>      
+    
+  </head>
+  <body>
+    
+        <a data-dropdown="drop1" class="hide-for-medium-down"><span class="typcn typcn-notes" style="font-size:3em;"></span></a>			
+            <ul id="drop1" class="f-dropdown radius" data-dropdown-content>
+				<li><a href="#" data-reveal-id="localLane2" data-reveal>One Of Those 2</a></li>
+              <li><a href="#" data-reveal-id="localLane" data-reveal>One Of Those</a></li>
+              <li class="hide-for-medium-down"><a href="vid.html">Thank The Man</a></li>
+              <li class="hide-for-medium-down"><a href="media.zip">Download</a></li>
+            </ul>
+
+
+    <section class="main-content">
+    	<div class="large-12 columns text-center">
+        	<h3>NAHC</h3>
+        	<h1 class="main-logo">LOCAL LANE</h1>
+            <h3>#OneOfThose2</h3>
+            
+            <div class="social-media">
+                <a href="https://www.facebook.com/LocalLane" target="_blank"><span class="typcn typcn-social-facebook-circular"></span></a>
+                <a href="https://twitter.com/LocalLane" target="_blank"><span class="typcn typcn-social-twitter-circular"></span></a>
+                <a href="mailto:locallane@gmail.com" target="_blank"><span class="typcn typcn-mail"></span></a>
+                <a href="https://twitter.com/NAHCofLocalLane" target="_blank"><span class="typcn typcn-social-twitter-circular"></span></a>
+                <a href="http://instagram.com/locallane" target="_blank"><span class="typcn typcn-social-instagram-circular"></span></a>
+        	</div>
+            <br /><br /> <br />
+            <div id="music" class="hide-for-large-up">
+            <a onclick="document.getElementById('audio-player').play()"><span class="typcn typcn-media-play" style="font-size:3.5em;"></span></a>
+            <a onclick="document.getElementById('audio-player').pause()"><span class="typcn typcn-media-pause" style="font-size:3.5em;"></span></a>
+         <div id="w">
+            <div id="content">
+              <div class="audio-player">
+              <h2>#OneOfThose</h2>
+                <audio id="audio-player" preload="auto" tabindex="0" type="audio/mp3" controls>
+                	<source type="audio/mp3" src="media/Sunshine.mix.6.mp3">
+                    Sorry, your browser does not support HTML5 audio.
+                </audio>
+              </div>
+            </div>
+          </div>
+
+			<ul id="playlist">
+                <li class="active">
+                        <a href="media/Sunshine.mix.6.mp3">
+                            Nahc-Sunshine
+                        </a>
+                </li>
+                <li>
+                        <a href="media/TC.mp3">
+                           TC - Bout That Life
+                        </a>
+                </li>
+				<li>
+                        <a href="media/Intro-One-of-those.mp3">
+                            Intro / One of Those
+                        </a>
+                </li>
+                <li>
+                        <a href="media/Dirty-laundry.mp3">
+                            Dirty Laundry
+                        </a>
+                </li>
+                <li>
+                       <a href="media/Herbalism.mp3">
+                            Herbalism
+                        </a>
+                    </li>
+                    <li>
+                        <a href="media/Honest-(Local-Lane-Remix).mp3">
+                            Honest (Local Lane Remix)
+                        </a>
+                    </li>
+                    <li>
+                    <a href="media/Ova-&-Out.mp3">
+                        Ova & Out
+                    </a>
+                </li>
+                <li>
+                    <a href="media/It-Wont-Stop-(Local-Lane-Remix).mp3">
+                        It Won't Stop (Local Lane Remix)
+                    </a>
+                </li>
+                <li>
+                    <a href="media/ Telephone.mp3">
+                        Telephone
+                    </a>
+                </li>
+                <li>
+                    <a href="media/Dont-Worry.mp3">
+                       Don't Worry
+                    </a>
+                </li>
+                <li>
+                    <a href="media/Love-Hate-(Local-Lane-Remix).mp3">
+                       Love Hate (Local Lane Remix)
+                    </a>
+                </li>
+            </ul>
+      </div>
+
+        </div>
+        
+            </section>
+	  
+    <div id="localLane2" class="reveal-modal" data-reveal>
+       <div id="music" class="hide-for-medium-down">
+          <div id="w">
+            <div id="content">
+              <div class="audio-player">
+              <h2>#OneOfThose2</h2><br />
+              <a onclick="document.getElementById('audio-player').play()"><span class="typcn typcn-media-play" style="font-size:3.5em; color:#ff3;"></span></a>
+            <a onclick="document.getElementById('audio-player').pause()"><span class="typcn typcn-media-pause" style="font-size:3.5em;color:#ff3;"></span></a>
+         
+                <audio id="audio-player" preload="auto" tabindex="0" type="audio/mp3">
+                	<source type="audio/mp3" src="media/Sunshine.mix.6.mp3">
+                    Sorry, your browser does not support HTML5 audio.
+                </audio>
+              </div>
+            </div>
+          </div>
+
+			<ul id="playlist">
+               <li class="active">
+                        <a href="media/Sunshine.mix.6.mp3">
+                             Nahc-Sunshine
+                        </a>
+                </li>
+                <li>
+                        <a href="media/TC.mp3">
+                           TC - Bout That Life
+                        </a>
+                </li>
+            </ul>
+      </div>
+	<a class="close-reveal-modal">&#215;</a>
+    </div>
+	  
+    <div id="localLane" class="reveal-modal" data-reveal>
+       <div id="music" class="hide-for-medium-down">
+          <div id="w">
+            <div id="content">
+              <div class="audio-player">
+              <h2>#OneOfThose</h2><br />
+              <a onclick="document.getElementById('audio-player').play()"><span class="typcn typcn-media-play" style="font-size:3.5em;color:#ff3;"></span></a>
+            <a onclick="document.getElementById('audio-player').pause()"><span class="typcn typcn-media-pause" style="font-size:3.5em;color:#ff3;"></span></a>
+         
+                <audio id="audio-player" preload="auto" tabindex="0" type="audio/mp3">
+                	<source type="audio/mp3" src="media/Intro-One-of-those.mp3">
+                    Sorry, your browser does not support HTML5 audio.
+                </audio>
+              </div>
+            </div>
+          </div>
+
+			<ul id="playlist">
+               <li class="active">
+                        <a href="media/Intro-One-of-those.mp3">
+                            Intro / One of Those
+                        </a>
+                </li>
+                <li>
+                        <a href="media/Dirty-laundry.mp3">
+                            Dirty Laundry
+                        </a>
+                </li>
+                <li>
+                       <a href="media/Herbalism.mp3">
+                            Herbalism
+                        </a>
+                    </li>
+                    <li>
+                        <a href="media/Honest-(Local-Lane-Remix).mp3">
+                            Honest (Local Lane Remix)
+                        </a>
+                    </li>
+                    <li>
+                    <a href="media/Ova-&-Out.mp3">
+                        Ova & Out
+                    </a>
+                </li>
+                <li>
+                    <a href="media/It-Wont-Stop-(Local-Lane-Remix).mp3">
+                        It Won't Stop (Local Lane Remix)
+                    </a>
+                </li>
+                <li>
+                    <a href="media/ Telephone.mp3">
+                        Telephone
+                    </a>
+                </li>
+                <li>
+                    <a href="media/Dont-Worry.mp3">
+                       Don't Worry
+                    </a>
+                </li>
+                <li>
+                    <a href="media/Love-Hate-(Local-Lane-Remix).mp3">
+                       Love Hate (Local Lane Remix)
+                    </a>
+                </li>
+            </ul>
+      </div>
+	<a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <script type="text/javascript">
+		$(function(){
+		  $('#audio-player').mediaelementplayer({
+			alwaysShowControls: true,
+			features: ['playpause','progress'],
+			audioVolume: 'horizontal',
+			audioWidth: 450,
+			audioHeight: 70,
+			iPadUseNativeControls: true,
+			iPhoneUseNativeControls: true,
+			AndroidUseNativeControls: true
+		  });
+		});
+	</script>
+    
+    <script>
+		var audio;
+		var playlist;
+		var tracks;
+		var current;
+		
+		init();
+		function init(){
+			current = 0;
+			audio = $('audio');
+			playlist = $('#playlist');
+			tracks = playlist.find('li a');
+			len = tracks.length - 1;
+			audio[0].volume = 1;
+			playlist.find('a').click(function(e){
+				e.preventDefault();
+				link = $(this);
+				current = link.parent().index();
+				run(link, audio[0]);
+			});
+			audio[0].addEventListener('ended',function(e){
+				current++;
+				if(current == len){
+					current = 0;
+					link = playlist.find('a')[0];
+				}else{
+					link = playlist.find('a')[current];    
+				}
+				run($(link),audio[0]);
+			});
+		}
+		function run(link, player){
+				player.src = link.attr('href');
+				par = link.parent();
+				par.addClass('active').siblings().removeClass('active');
+				audio[0].load();
+				audio[0].play();
+		}
+	</script>
+    <script>
+		$.each($('audio'), function () {
+    		(this).AudioPlayerV1('pause');
+		});
+	</script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
